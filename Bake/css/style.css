@@ -5,9 +5,10 @@
 }
 body {
     overflow-x: hidden;
-    font-size: 1rem;
+    font-size: 20px;
     color: #fff;
     font-family: 'Flamenco', cursive;
+
 }
 
 header {
@@ -26,14 +27,26 @@ header {
 
 .logo{
     width:auto;
-    height:150px;
+    height:200px;
 }
 
+.bar-icon{
+    color:white;
+    width:150px;
+    display: none;
+
+}
+.makeVisible {
+    display: block;
+}
 .main-nav {
     display: flex;
     list-style: none;
     justify-content: space-between;
     margin-right:1rem;
+}
+.main-nav li {
+    display: inline-block;
 }
 .main-nav a {
     color:#fff;
@@ -41,10 +54,11 @@ header {
     font-weight: bolder;
     text-transform: uppercase;
     margin:0 1rem;
+    transition: all ease-out 0.5s;
 }
 
 .main-nav a:hover {
-    border-bottom:2px solid #fff;
+    border-bottom:2px solid #bf55ec;
     padding-bottom:0.5rem;
 }
 
@@ -58,7 +72,7 @@ header {
 }
 
 .main-content-header h1 {
-    font-size: 2.62rem;
+    font-size: 240%;
     word-spacing: 5px;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -75,6 +89,7 @@ header {
     transition: background-color 0.2s,border 0.2s,color 0.2s;
 }
 
+
 .btn-full {
     background-color: transparent;
     color:#bf55ec;
@@ -82,9 +97,85 @@ header {
     margin-right:1rem;
 }
 
+.btn-full:hover{
+    background-color: #fff;
+}
 .btn-nav {
     background-color: transparent;
     color:#fff;
     border:1px solid #fff;
 
+}
+
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+
+
+.content-heading {
+    animation: textAnimation 1s infinite;
+}
+
+@keyframes textAnimation {
+    0%{
+        color:red;
+    }
+    20% {
+        color:#bf55ec;
+    }
+    50%{
+        color:white;
+    }
+    100% {
+        color:#bf55ec
+    }
+}
+
+@media only screen and (max-width:1180px){
+
+     .main-content-header {
+         margin-left: 5%;
+         width:100%;
+     }
+     .main-nav li {
+         display: inline-block;
+     }
+}
+
+@media only screen and (max-width:789px){
+    .main-nav{
+        display: none;
+    }
+    .bar-icon {
+        display: inline-block;
+    }
+    .main-nav li {
+        display: block;
+        margin:0 auto;
+    }
+    .main-content-header {
+        margin-left: 5%;
+    }
+    .main-content-header h1 {
+        font-size: 180%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .main-content-header {
+        margin-left:2%;
+    }
+    .main-nav {
+        margin:0 3%;
+    }
+    .main-nav li {
+        display: block;
+        margin:0 auto;
+    }
+    .main-content-header h1 {
+        font-size: 150%;
+    }
+    .btn-full {
+        margin-bottom:2rem;
+    }
 }

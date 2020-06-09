@@ -5,31 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <title>DC Bake</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="row">
-                <img src="./images/logo.png" alt="logo" class="logo">
-                <ul class="main-nav">
+                <img src="./images/logo1.png" alt="logo" class="logo">
+
+                <ul  id= "main-nav" class="main-nav animate__animated animate__slideInDown ">
                     <li><a href="#">Cake delivery</a></li>
                     <li><a href="#">how to order</a></li>
                     <li><a href="#">check more</a></li>
                     <li><a href="#">sign up</a></li>
                 </ul>
+                <a  onclick="toggle()" class="bar-icon"> <i class="fa fa-bars " aria-hidden="true"></i></a>
             </div>
             
         </nav>
         <div class="main-content-header">
-        <h1>Welcome to <span class=" ">dc cafe</span>.<br>House of cake lover oH yes.</h1>
+        <h1>Welcome to <span class="content-heading">dc cafe</span>.<br>House of cake lover oH yes.</h1>
         
             <a href="#" class="btn btn-full">Click to order</a >
             <a href=# class="btn btn-nav">show me more</a >
         </div>
     </header>
     
-        
+      <script type="text/javascript">
+          function toggle(){
+              var element= document.getElementById('main-nav');
+              if(element.style.display==="none")
+              element.style.display="block";
+              else {
+                  element.style.display="none";
+              }
+          }
+      </script>  
     
 </body>
+
 </html>
