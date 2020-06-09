@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/background.jpg') ;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100vh;
+
+}
+.row {
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:auto;
+    height:150px;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right:1rem;
+}
+.main-nav a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin:0 1rem;
+}
+
+.main-nav a:hover {
+    border-bottom:2px solid #fff;
+    padding-bottom:0.5rem;
+}
+
+.main-content-header{
+    width:1180px;
+    position: absolute;
+    text-transform: uppercase;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.main-content-header h1 {
+    font-size: 2.62rem;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color:#fff;
+    font-weight: lighter;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+
+.btn-full {
+    background-color: transparent;
+    color:#bf55ec;
+    border:1px solid #bf55ec; 
+    margin-right:1rem;
+}
+
+.btn-nav {
+    background-color: transparent;
+    color:#fff;
+    border:1px solid #fff;
+
+}
