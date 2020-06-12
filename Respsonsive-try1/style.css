@@ -462,3 +462,29 @@ form:hover .form-button button{
    background-color: #606060; 
 }
 /*************footer  css end ******************/
+
+
+/* ********************media queries****************** */
+
+@media(max-width:768px){
+    .nav-item {
+        text-align: center!important;
+    }
+    .pricing,.happyclients,.contactus{
+        height:auto;
+        margin-top: 50px;
+    }
+    .card-second {
+       transform: translateY(0px);
+       margin:30px 0 ;
+    }
+    .contactus p{
+        padding:0 50px;
+    }
+    .footerdiv {
+        margin:30px 0;
+    }
+    .footerdiv:nth-child(2){
+        text-align: left!important;
+    }
+}
