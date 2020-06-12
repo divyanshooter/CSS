@@ -390,3 +390,24 @@ form:hover .form-button button{
 }
 /* ************contact us css end ******************/
 
+/* ************newletter css start ******************/
+.newletter {
+    width:100%;
+    height:auto;
+    margin:80px auto;
+}
+
+.newletterInput{
+    border-radius: 100px 0 0 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+}
+
+.input-group-text {
+    color:#fff !important;
+    background-color: #5bc0de !important;
+    border-radius: 0 100px 100px 0 !important;
+    min-width:130px!important;
+    min-height:45px !important;
+}
+/*************newsletter  css end ******************/
