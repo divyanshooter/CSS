@@ -444,6 +444,57 @@
       </section>
        
      <!-- *****************send letter ends**********************-->
+
+     <!-- *****************footer section starts**********************-->
+       <footer class="footersection" id="footerId">
+          <div class="container">
+             <div class="row">
+               
+              <div class="col-lg-4 col-md-6 col-12 footerdiv">
+                 <div>
+                   <h3>DCTechinicals</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat odit delectus cumque porro voluptates similique accusamus! Incidunt earum commodi rem libero, asperiores animi, est eius aliquam magni numquam molestias!</p>
+                 </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 col-12 footerdiv text-center">
+                <div>
+                  <h3>Navigation Links</h3>
+                  <li><a href=#>Home</a></li>
+                  <li><a href=#>Service</a></li>
+                  <li><a href=#>Price</a></li>
+                  <li><a href=#>About</a></li>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-12 col-12 footerdiv">
+                <div>
+                  <h3>NEWSLETTER</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat odit delectus cumque porro voluptates similique accusamus! Incidunt earum commodi rem libero, asperiores animi, est eius aliquam magni numquam molestias!</p>
+                  <div class="container newsletter-main">
+                    <div class="row">
+                       <div class="col-lg-12 col-12">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control newletterInput" placeholder="Your Email">
+                          <div class="input-group-append">
+                            <span class="input-group-text">Subscribe</span>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="mt-5 text-center">
+               <p>Copyright @2020 All rights reserved | This template is made with love by DCTechincals</p>
+             </div>
+             <div class="scrolltop float-right">
+               <i class="fa fa-arrow-up" onclick="topfunction()" id="myBtn"></i>
+             </div>
+          </div>
+       </footer>
+     <!-- *****************footer section ends**********************-->
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -456,6 +507,21 @@
            delay:10,
            time:3000
        })
+       mybutton=document.getElementById('myBtn');
+       window.onscroll=function(){scrollFunction()};
+
+       function scrollFunction() {
+         if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+           mybutton.style.display="block";
+         }
+         else {
+           mybutton.style.display="none";
+         }
+       }
+      function topfunction() {
+          document.body.scrollTop=0;
+          document.documentElement.scrollTop=0;
+      }
     </script>
 </body>
 </html>

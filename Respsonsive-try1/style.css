@@ -3,6 +3,9 @@
       padding:0;
       box-sizing: border-box;
   }
+  html {
+      scroll-behavior: smooth;
+  }
   a{
       text-decoration: none;
   }
@@ -411,3 +414,51 @@ form:hover .form-button button{
     min-height:45px !important;
 }
 /*************newsletter  css end ******************/
+
+/*************footer  css starts ******************/
+ .footersection {
+     width:100%;
+     height:auto;
+     padding:70px 0 20px 0;
+     background:#00abff;
+     position: relative;
+
+ }
+
+ .footersection p {
+     color:#fff;
+ }
+
+ .footersection li a {
+     font-size: 0.9rem;
+     line-height:1.6;
+     font-weight:400;
+     color:#fff;
+     text-transform: capitalize;
+ }
+
+ .footersection h3 {
+     text-transform: uppercase;
+     color:#fff;
+     margin-bottom: 25px;
+     font-size: 1.2rem!important;
+     font-weight: 600;
+     text-shadow: 0 2px 5px rgba(0,0,0,0.4) ;
+    }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right:40px;
+    z-index:99;
+    border:none;
+    color:#fff;
+    background:#00abff;
+    padding:10px;
+    border-radius:10px;
+}
+
+#myBtn:hover {
+   background-color: #606060; 
+}
+/*************footer  css end ******************/
