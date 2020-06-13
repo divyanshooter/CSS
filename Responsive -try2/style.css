@@ -18,10 +18,13 @@
 
 .headerset h2 {
     font-size: 42px;
+    text-shadow: 10px 40px 30px rgba(0,0,0,0.8);
 }
 .headerset h1 {
     font-size: 82px;
     font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 10px 20px 30px rgba(0,0,0,0.4);
 }
 
 /* *************************our service ****************************/
@@ -33,7 +36,7 @@
 .ourservice h1 {
     font-weight: bold;
     font-size: 50px;
-
+    
 }
 
 .rowsetting {
@@ -53,4 +56,28 @@
 
 .rowsetting p {
     color:#6c757d;
+}
+
+/* *************************our service ends ****************************/
+
+/* *************************portfolio starts *************************** */
+
+.portfolio {
+    width:100%;
+    height:1100px;
+    padding:50px 0;
+}
+
+.portfolio img {
+    width:100% ;
+    height:100%;
+}
+
+.portfolio h1 {
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.card {
+    margin-top:40px ;
 }
