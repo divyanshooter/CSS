@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    right:0;
+    bottom:0;
+}
+
+.overlay {
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    top:0;
+    left:0;
+    color:#fff;
+}
+
+section {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cityText h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+
+}
+
+.cityText p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.cityText button {
+    width:200px;
+    height:60px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color:#fff;
+    border-radius: 10%;
+    border-color: white;
+}
+
+@media only screen and (max-width:600px) {
+    .cityText h1 {
+        font-size: 2rem;
+    }
+    .cityText p {
+        font-size: 1rem;
+    }
+    .cityText button {
+        font-size: 1rem;
+    }
+}
