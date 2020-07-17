@@ -75,3 +75,9 @@ body {
   -o-appearance: none;
   appearance: none;
 }
+
+#carouselButton {
+  position: absolute;
+  bottom:0px;
+  right: 0px;
+}
